@@ -32,6 +32,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 500ms all ease;
 }
 
 body {
@@ -81,6 +82,10 @@ a:hover {
     padding-inline-start: var(--sidebar);
 }
 
+.page-content {
+    overflow: hidden;
+}
+
 table {
     overflow: hidden;
     border-radius: 8px;
@@ -97,6 +102,7 @@ aside {
     height: 100vh;
     position: fixed;
     color: var(--light);
+    transition: 500ms all ease;
     background-color: var(--dark);
 }
 
@@ -109,7 +115,7 @@ aside .sidebar > div {
 }
 
 aside .sidebar .menu-list {
-    overflow: auto;
+    overflow-y: auto;
     flex-grow: 1;
 } 
 
@@ -157,6 +163,31 @@ aside .sidebar ul li a::after {
 aside .sidebar ul li a:hover::after {
     width: 100%;
     transition: 300ms all ease;
+}
+
+body.side-hide {
+    --sidebar: 48px;
+    transition: 500ms all ease;
+}
+
+body.side-hide .sidebar :where(a, p) {
+    text-wrap: nowrap;
+}
+
+body.side-hide .btn {
+    padding: 8px;
+}
+
+body.side-hide .side-header img {
+    width: 100%;
+}
+
+body.side-hide .side-text {
+    visibility: hidden;
+}
+
+body.side-hide aside .sidebar .menu-list {
+    overflow-x: hidden;
 }
 /* sidebar css end */
 

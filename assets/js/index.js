@@ -1,3 +1,9 @@
+// sidebar function
+function sidebar() {
+    $("body").toggleClass("side-hide");
+}
+
+// dashboard 5 store sale item comparison chart
 const ctx = document.getElementById("storeSalesChart");
 
 new Chart(ctx, {
@@ -55,3 +61,4 @@ new Chart(ctx, {
         },
     },
 });
+
