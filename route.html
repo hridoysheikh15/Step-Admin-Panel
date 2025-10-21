@@ -25,48 +25,62 @@
             <div class="d-flex flex-column gap-2">
                 <div class="side-header d-flex justify-content-between align-items-center p-3">
                     <img src="./assets/img/logo light.png" alt="Main Logo" loading="lazy" />
-                    <i class="ri-menu-unfold-4-line"></i>
+                    <button class="btn btn-dark" onclick="sidebar()">
+                        <i class="ri-menu-unfold-4-line"></i>
+                    </button>
                 </div>
                 <div class="menu-list">
-                    <p class="m-0 text-muted ps-3 pb-2">General</p>
+                    <p class="m-0 text-muted ps-3 pb-2">
+                        <span class="side-text">General</span>
+                    </p>
                     <ul class="m-0 p-0">
                         <li>
                             <a href="./index.html" class="ps-3">
-                                <i class="ri-gallery-view-2"></i> Dashboard
+                                <i class="ri-gallery-view-2"></i> 
+                                <span class="side-text">Dashboard</span>
                             </a>
                         </li>
                         <li>
                             <a href="./store.html" class="ps-3">
-                                <i class="ri-store-2-line"></i> Store
+                                <i class="ri-store-2-line"></i> 
+                                <span class="side-text">Store</span>
                             </a>
                         </li>
                         <li>
                             <a href="./discount.html" class="ps-3">
-                                <i class="ri-price-tag-3-line"></i> Discount
+                                <i class="ri-price-tag-3-line"></i> 
+                                <span class="side-text">Discount</span>
                             </a>
                         </li>
                     </ul>
-                    <p class="m-0 text-muted ps-3 pt-3 pb-2">Advance</p>
+                    <p class="m-0 text-muted ps-3 pt-3 pb-2">
+                        <span class="side-text">Advance</span>
+                    </p>
                     <ul class="m-0 p-0">
                         <li>
                             <a href="./store-create.html" class="ps-3">
-                                <i class="ri-database-line"></i> Create Store
+                                <i class="ri-database-line"></i> 
+                                <span class="side-text">Create Store</span>
                             </a>
                         </li>
                         <li>
                             <a href="./route.html" class="ps-3">
-                                <i class="ri-links-fill"></i> Route Management
+                                <i class="ri-links-fill"></i> 
+                                <span class="side-text">Route Management</span>
                             </a>
                         </li>
                         <li>
                             <a href="./user.html" class="ps-3">
-                                <i class="ri-user-line"></i> User Management
+                                <i class="ri-user-line"></i> 
+                                <span class="side-text">User Management</span>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="p-3">
-                    <a href="#" class="btn btn-danger w-100">Log Out</a>
+                    <span class="side-text">
+                        <a href="#" class="btn btn-danger w-100">Log Out</a>
+                    </span>
                 </div>
             </div>
         </div>
