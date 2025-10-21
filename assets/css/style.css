@@ -98,10 +98,11 @@ table tr {
 
 /* sidebar css start */
 aside {
-    width: var(--sidebar);
+    z-index: 999;
     height: 100vh;
     position: fixed;
     color: var(--light);
+    width: var(--sidebar);
     transition: 500ms all ease;
     background-color: var(--dark);
 }
@@ -261,3 +262,9 @@ nav i {
     font-size: 12px;
 }
 /* discount page css end */
+
+@media (max-width: 1023px) {    
+    .layout-body {
+        padding-inline-start: 48px;
+    }
+}
