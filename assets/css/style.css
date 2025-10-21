@@ -211,3 +211,22 @@ nav i {
     background-color: #ED631C1f;
 }
 /* dashboard page css end */
+
+/* discount page css start */
+.disc-modal-card {
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.disc-modal-card img {
+    width: 64px;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    outline: 1px solid var(--tertery);
+}
+
+.disc-modal-card {
+    font-size: 12px;
+}
+/* discount page css end */
